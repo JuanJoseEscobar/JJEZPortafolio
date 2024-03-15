@@ -1,5 +1,5 @@
 import { useRouteError, Link } from "react-router-dom";
-//import "./NotFound.scss";
+import "./NotFound.scss";
 
 export const Notfound = () => {
   const error = useRouteError();
@@ -19,7 +19,7 @@ export const Notfound = () => {
       </svg>
       <h1>404</h1>
       <p>Page not found</p>
-      <p>{error.statusText || error.message}</p>
+      <p>Error: {error.status}</p>
       <Link to="/">Volver al Home</Link>
     </div>
   );

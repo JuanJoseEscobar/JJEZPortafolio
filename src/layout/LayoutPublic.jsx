@@ -3,11 +3,13 @@ import { NavHeader } from "../components/NavHeader/NavHeader";
 
 const LayoutPublic = ()=>{
     return (
-        
-        <main>
+        <>
             <NavHeader/>
-            <Outlet/>
-        </main>
+            <main>
+                <Outlet/>
+            </main>
+        </>
+        
         
     )
 }
