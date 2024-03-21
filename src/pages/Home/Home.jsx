@@ -40,7 +40,7 @@ export const Home = () => {
         </div>
         <div className="precentacionContent">
           <p>¿Quieres saber mas? descarga mi Hoja de vida.</p>
-          <a href={CVPDF} className="tituloColor2" download>¡Click Aqui!</a>
+          <a href={CVPDF} className="tituloColor2 linkCV" download>¡Click Aqui!</a>
         </div>
           
 
