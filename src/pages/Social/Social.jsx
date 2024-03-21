@@ -8,7 +8,6 @@ export const Social = () => {
             <h2>correo</h2>
             <h2>github</h2>
             <h2>linkendin</h2>
-            <h2>CV.pdf</h2>
         </div>
     </div>
   )

@@ -12,15 +12,14 @@ export const NavHeader = () => {
 
     
 
-
     return (
         <div className="ContentNav">
             <nav className="headerNav">
                 <div className="contentLeft">
                     <div className="perfilImagen">
-                        <img src="./MiniPerfilIMG.jpg" alt="perfil imagen" className="miniPerfil" />
+                        <img src="./IMGS/MiniPerfilIMG.jpg" alt="perfil imagen" className="miniPerfil" />
                     </div>
-                    <h1 className="titulo">¡Saludos!</h1>
+                    <h1 className="tituloColor">¡Saludos!</h1>
                 </div>
 
                 <input type="checkbox" id="check" ref={refCheckBTN} />

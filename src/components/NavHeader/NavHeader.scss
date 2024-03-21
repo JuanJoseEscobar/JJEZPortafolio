@@ -42,10 +42,6 @@
             }
         }
         
-        .titulo{
-            color:  hsl(44, 80%, 67%);
-
-        }
     }
 
     .contentRight{
@@ -59,14 +55,14 @@
     .boxLink{
         
         .linkTxt{
-            padding: 5px;
+            padding: 0.5em;
             text-decoration: none;
             color: hsl(209, 76%, 69%);
         }
         
         .linkTxt:hover{
             text-decoration: underline;
-            color: hsl(194, 80%, 80%);
+            color: hsl(44, 80%, 67%);
         }
     } 
 }
