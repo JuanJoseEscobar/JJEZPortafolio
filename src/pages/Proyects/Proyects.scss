@@ -1,0 +1,227 @@
+
+.proyectsContent{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    
+    
+    .central-flex-container{
+        // background: rgb(2,18,39);
+        background: linear-gradient(0deg, rgba(2,18,39,1) 0%, rgba(8,28,54,1) 100%);
+        margin: auto;
+        max-width: 800px;
+        min-height: 100%;
+        padding-bottom: 100px;
+        // max-height: calc(100% - 75px);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        .Pancarta-flex-item{
+            background-color: rgba(2,18,39,1);
+            border: 2px solid hsl(209, 76%, 69%);
+            border-radius: 25px;
+
+            width: 750px;
+            height: 464px;
+            margin-top: 25px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .titulo-content{
+                // background-color: blueviolet;
+                width: 100%;
+                h1{
+                    text-align: center;
+                    padding: 15px 0;
+                }
+            }
+
+            .body-content{
+                // background-color: rgba(128, 255, 0, 0.329);
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .info-content{
+                    // background-color: chocolate;
+                    width: 100%;
+                    height: 286px;
+                    display: flex;
+                    justify-content: space-evenly;
+                    
+                    .content-image{
+                        background-color: hsl(214, 90%, 8%);
+                        width: 286px;
+                        height: 286px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 15px;
+                        overflow: hidden;
+        
+                        .image-item{
+                            width: 100%;
+                            height: auto;
+                            transform: scale(1);
+                        }
+        
+                    }
+        
+                    .content-right-item{
+                        border-left: 1px solid hsl(209, 76%, 69%);
+                        width: calc(100% - 286px - 35px);
+                        height: 100%;
+
+                        p{
+                            margin: auto;
+                            width: 90%;
+                            font-size: large;
+                        }
+                    }
+
+                }
+
+                .btn-content{
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    a{
+                        background-color: hsl(207, 80%, 50%);
+                        flex: 1 1 auto;
+                        height: 68px;
+                        margin: 0 10px;
+                        text-decoration: none;
+                        cursor: pointer;
+                        border-radius: 15px;
+                        font-size: x-large;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        span{
+                            color: hsl(0, 0%, 100%);
+                        }
+
+                    }
+                    a:hover{
+                        background-color: hsl(305, 47%, 55%);
+                    }
+                }
+
+            }
+            
+        }
+        
+        
+    }
+    
+}
+
+@media (max-width: 800px){
+    .proyectsContent{
+            
+        .central-flex-container{
+
+            .Pancarta-flex-item{
+                width: 450px;
+                height: 390px;
+
+                .body-content{
+                    height: 450px;
+                    .info-content{
+                        height: 200px;
+                        .content-image{
+                            width: 200px;
+                            height: 200px;
+                        }
+
+                        .content-right-item{
+                            width: calc(100% - 200px - 35px);
+                        }
+                    }
+
+                }
+        
+            }
+
+        }
+
+    }
+}
+
+@media (max-width: 500px)
+{
+    .proyectsContent{
+        
+        .central-flex-container{
+            width: 100%;
+            
+            .Pancarta-flex-item{
+                width: 80%;
+                height: 400px;
+
+                .titulo-content{
+                    font-size: small;
+
+                    h1{
+                        padding: 10px 0;
+                    }
+
+                }
+
+                .body-content{
+                    height: 450px;
+                    
+                    .info-content{
+                        flex-direction: column;
+                        justify-content: unset;
+                        align-items: center;
+                        height: 300px;
+
+                        .content-image{
+                            width: 180px;
+                            height: 180px;
+                        }
+
+                        .content-right-item{
+                            border-left: none;
+                            flex: none;
+                            height: 100px;
+                            width: 100%;
+
+                            p{
+                                text-align: justify;
+                                margin: 15px 20px 0;
+                                font-size: 16px;
+                                width: unset;
+                                flex: 1 1 auto;
+
+                            }
+                        }
+                    }
+
+                    .btn-content{
+
+                        a{
+                            margin: 0 20px;
+                            height: 40px;
+                        }
+                        a:hover{
+                            background-color: hsl(207, 80%, 50%);
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+    }
+
+}
