@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./NavHeader.scss"
 import { useRef } from "react";
 
@@ -6,11 +6,11 @@ export const NavHeader = () => {
 
     const refCheckBTN = useRef(false);
 
-    const handleCheck = () =>{
+    const handleCheck = () => {
         refCheckBTN.current.checked = false;
     }
 
-    
+
 
     return (
         <div className="ContentNav">
@@ -31,10 +31,12 @@ export const NavHeader = () => {
 
                 <div className="contentRight">
                     <div className="boxLink">
-                        <NavLink className="linkTxt" onClick={handleCheck} to="/" >Sobre mi</NavLink>
+                        <NavLink className={({ isActive }) =>
+                            isActive ? "linkTxt active" : "linkTxt"
+                        } onClick={handleCheck} to="/" >Sobre mi</NavLink>
                     </div>
                     <div className="boxLink">
-                        <Link className="linkTxt" onClick={handleCheck} to="/Proyectos" >Proyectos</Link>
+                        <NavLink className="linkTxt" onClick={handleCheck} to="/Proyectos" >Proyectos</NavLink>
                     </div>
                     <div className="boxLink">
                         <NavLink className="linkTxt" onClick={handleCheck} to="/Social" >Social</NavLink>

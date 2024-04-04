@@ -1,5 +1,6 @@
 import './Proyects.scss'
 import { Pancarta } from './Pancarta'
+import { Link } from 'react-router-dom'
 
 export const Proyects = () => {
   return (
@@ -18,7 +19,9 @@ export const Proyects = () => {
           parrafo="este enlace es para los proyectyos de frontend"
           imagenSRC = ''
           linkUrl = ''
-        />
+        >
+          <Link to="/Proyectos/WebFrontend"><span>Visitar</span></Link>
+        </Pancarta>
         <Pancarta 
           titulo = "Modelado 3D" 
           parrafo="En en este enlace encontraras los modelos y render realizados por mi"

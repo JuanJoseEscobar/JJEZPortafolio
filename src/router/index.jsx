@@ -1,6 +1,6 @@
 import { createHashRouter,createBrowserRouter } from "react-router-dom";
 import LayoutPublic from "../layout/LayoutPublic.jsx";
-import { Home, Notfound, Proyects, Social } from "../pages/index";
+import { Home, Notfound, Proyects, Social, WebFrontend } from "../pages/index";
 
 
 export const router = createHashRouter([
@@ -17,13 +17,18 @@ export const router = createHashRouter([
                         element: <Home />,
                     },
                     {
-                         path: "/Proyectos",
-                         element:<Proyects/>,
-        
+                        path: "/Proyectos",
+                        element:<Proyects/>,
+                        
                     },
                     {
-                         path: "/Social",
-                         element:<Social/>,
+                        path: "/Proyectos/WebFrontend",
+                        element:<WebFrontend/>,
+                        
+                    },
+                    {
+                        path: "/Social",
+                        element:<Social/>,
         
                     }
                 ]

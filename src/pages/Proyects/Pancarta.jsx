@@ -4,7 +4,8 @@ export const Pancarta = ({
         titulo = "Proyectos", 
         parrafo = "Esto es un parrafo de prueba y no deveria verse en la version final", 
         imagenSRC = './',
-        linkUrl = ''
+        linkUrl = '',
+        children
     }) => {
     return (
         <div className="Pancarta-flex-item">
@@ -28,9 +29,7 @@ export const Pancarta = ({
                 </div>
                 
                 <div className="btn-content">
-
-                    <a href={linkUrl} target='_blank'><span>Visitar</span></a>
-
+                    {children || <a href={linkUrl} target='_blank'><span>Visitar</span></a> }
                 </div>
 
 
