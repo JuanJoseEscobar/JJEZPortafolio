@@ -11,7 +11,7 @@ export const Home = () => {
         <div className="precentacionContent">
           
           <div className="photoPrincipal">
-            <img src="./IMGS/MiniPerfilIMG.jpg" alt="Fotoperfil" className="photo" />
+            <img src="./IMGS/Per1.jpeg" alt="Fotoperfil" className="photo" />
           </div>
           <br />
           <h1 className="tituloColor">Juan Jose Escobar</h1>

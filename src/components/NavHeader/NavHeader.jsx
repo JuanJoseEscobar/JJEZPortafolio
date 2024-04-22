@@ -19,7 +19,7 @@ export const NavHeader = () => {
                     <div className="perfilImagen">
                         <img src="./IMGS/MiniPerfilIMG.jpg" alt="perfil imagen" className="miniPerfil" />
                     </div>
-                    <h1 className="tituloColor">¡Saludos!</h1>
+                    <h1 className="tituloColor">Juan Escobar</h1>
                 </div>
 
                 <input type="checkbox" id="check" ref={refCheckBTN} />
