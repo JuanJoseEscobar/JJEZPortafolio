@@ -32,7 +32,7 @@
             background-color: rgb(2, 18, 39);
             border-radius: 25px;
             width: 200px;
-            height: 325px;
+            height: 350px;
             border: 2px solid hsl(209, 76%, 69%);
             display: flex;
             align-items: center;
@@ -42,6 +42,7 @@
                 color: var(--colorPrimario);    
                 // margin: auto;
                 text-align: center;
+                padding: 5px 0;
             }
 
             .contenedor-imagen{
@@ -71,6 +72,7 @@
 
                 p{
                     text-align: justify;
+                    padding-top: 5px;
                 }
                 
 
@@ -84,7 +86,7 @@
                 align-items: center;
                 gap: 10px;
                 // margin: auto;
-                padding-bottom: 5px;
+                padding-bottom: 10px;
 
                 a{
                     background-color: var(--colorTercero);
