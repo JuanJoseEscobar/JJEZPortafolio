@@ -5,7 +5,8 @@ const PinCard = ({
     IMGsrc ='',
     Parrafo ="Parrafo",
     Gitsrc = '',
-    Websrc = ''
+    Websrc = '',
+    disableWeb = false
   }) => {
   return (
     <div className="pincard">
@@ -22,7 +23,7 @@ const PinCard = ({
 
         <div className="botons-contents">
             <a className="botones-link" target='_blank' href={Gitsrc}><span>GitHub</span></a>
-            <a className="botones-link" target='_blank' href={Websrc}><span>Visitar</span></a>
+            <a className="botones-link"  target='_blank' href={Websrc}><span>Visitar</span></a>
         </div>
 
     </div>

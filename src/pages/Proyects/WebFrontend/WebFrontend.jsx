@@ -28,6 +28,15 @@ export const WebFrontend = () => {
                         Websrc = 'https://react-vite-fb.web.app/'
                     />
 
+                    <PinCard
+                        Titulo = "Pagina Personal"
+                        IMGsrc ='./IMGS/Proyectos/Web/proPortafolio.png'
+                        Parrafo ="Mi pagina personal. Puedes ver el codigo en github."
+                        Gitsrc = 'https://github.com/JuanJoseEscobar/JJEZPortafolio'
+                        Websrc = 'https://jjezportafolio.web.app/'
+                        disableWeb = {true}
+                    />
+
                 </div>
 
             </div>
