@@ -1,18 +1,28 @@
 
 
-const PinCard = () => {
+const PinCard = ({
+    Titulo = "Titulo",
+    IMGsrc ='',
+    Parrafo ="Parrafo",
+    Gitsrc = '',
+    Websrc = ''
+  }) => {
   return (
     <div className="pincard">
-        <h2 className='pincard-titulo'>Titulo</h2>
+
+        <h2 className='pincard-titulo'>{Titulo}</h2>
+
         <div className="contenedor-imagen">
-            <img src="" alt="proyecto IMG" />
+            <img className="img-proyectos-web" src={IMGsrc} alt="proyecto IMG"/>
         </div>
+
         <div className="parrafo">
-            <p>texto</p>
+            <p>{Parrafo}</p>
         </div>
+
         <div className="botons-contents">
-            <a href="">git Hub</a>
-            <a href="">Visitar</a>
+            <a className="botones-link" target='_blank' href={Gitsrc}><span>GitHub</span></a>
+            <a className="botones-link" target='_blank' href={Websrc}><span>Visitar</span></a>
         </div>
 
     </div>

@@ -32,23 +32,76 @@
             background-color: rgb(2, 18, 39);
             border-radius: 25px;
             width: 200px;
-            height: 250px;
+            height: 325px;
             border: 2px solid hsl(209, 76%, 69%);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
             
             .pincard-titulo{
                 color: var(--colorPrimario);    
-                margin: auto;
+                // margin: auto;
                 text-align: center;
             }
 
             .contenedor-imagen{
-                background-color: aqua;
+                // background-color: aqua;
 
-                width: 90%;
-                margin: auto;
+                width: 175px;
+                height: 175px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                border-radius: 15px;
+                overflow: hidden;
+
+                .img-proyectos-web{
+                    width: auto;
+                    height: 100%;
+                    transform: scale(1);
+                }
+            }
+
+            .parrafo{
+                // background-color: blueviolet;
+                // margin: auto;
+                width: 175px;
+                display: flex;
+                flex: 1 1 auto;
+
+                p{
+                    text-align: justify;
+                }
+                
+
+            }
+
+            .botons-contents{
+                // background-color: brown;
+                width: 175px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                // margin: auto;
+                padding-bottom: 5px;
+
+                a{
+                    background-color: var(--colorTercero);
+                    width: 100%;
+                    padding: 5px 0;
+                    border-radius: 10px;
+                    text-align: center;
+                    text-decoration: none;
+                    
+                    span{
+                        color: hsl(0, 0%, 100%);
+                    }
+                }
+
+                a:hover{
+                    background-color: var(--colorSecundario);
+                }
             }
 
             
