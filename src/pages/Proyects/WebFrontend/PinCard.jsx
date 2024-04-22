@@ -1,10 +1,11 @@
-
+import { Link } from 'react-router-dom'
 
 const PinCard = ({
     Titulo = "Titulo",
     IMGsrc ='',
     Parrafo ="Parrafo",
     Gitsrc = '',
+    disableGitHub = false,
     Websrc = '',
     disableWeb = false
   }) => {
@@ -23,7 +24,11 @@ const PinCard = ({
 
         <div className="botons-contents">
             <a className="botones-link" target='_blank' href={Gitsrc}><span>GitHub</span></a>
-            <a className="botones-link"  target='_blank' href={Websrc}><span>Visitar</span></a>
+            {!disableWeb ?(
+                <a className="botones-link" target='_blank' href={Websrc}><span>Visitar</span></a>
+            ):(
+                <Link className="botones-link" to="/"><span>Estas Aqui</span></Link>
+            ) }
         </div>
 
     </div>
