@@ -23,7 +23,11 @@ const PinCard = ({
         </div>
 
         <div className="botons-contents">
-            <a className="botones-link" target='_blank' href={Gitsrc}><span>GitHub</span></a>
+            {!disableGitHub ? (
+                <a className="botones-link" target='_blank' href={Gitsrc}><span>GitHub</span></a>
+            ):(
+                <span className="botones-link disable-btn" target='_blank' href={Gitsrc}><span>Privado</span></span>
+            )}
             {!disableWeb ?(
                 <a className="botones-link" target='_blank' href={Websrc}><span>Visitar</span></a>
             ):(

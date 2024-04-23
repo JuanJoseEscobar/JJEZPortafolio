@@ -98,9 +98,17 @@
                         color: hsl(0, 0%, 100%);
                     }
                 }
-
+                
                 .botones-link:hover{
                     background-color: var(--colorSecundario);
+                }
+                
+                .disable-btn{
+                    background-color: hsl(207, 87%, 31%);
+                    
+                }
+                .disable-btn:hover{
+                    background-color: hsl(207, 87%, 31%);
                 }
             }
 

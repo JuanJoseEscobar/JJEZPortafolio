@@ -29,6 +29,14 @@ export const WebFrontend = () => {
                     />
 
                     <PinCard
+                        Titulo = "Catalogo Burdeos"
+                        IMGsrc ='./IMGS/Proyectos/Web/proCatalogo.png'
+                        Parrafo ="App web creado en mi tiempo en MaderKit. El codigo es privado por terminos de contrato."
+                        Websrc = 'https://3dymedios.com/AT/AppTiendasCatalogo/#/HomeCenter/ColeccionBurdeos'
+                        disableGitHub = {true}
+                    />
+
+                    <PinCard
                         Titulo = "Pagina Personal"
                         IMGsrc ='./IMGS/Proyectos/Web/proPortafolio.png'
                         Parrafo ="Mi pagina personal. Puedes ver el codigo en github."
