@@ -13,6 +13,22 @@ export const WebFrontend = () => {
                 <div className="central-grid-container">
 
                     <PinCard
+                        Titulo = "Catalogo Burdeos"
+                        IMGsrc ='./IMGS/Proyectos/Web/proCatalogo.png'
+                        Parrafo ="App web creado en mi tiempo en MaderKit. El codigo es privado por terminos de contrato."
+                        Websrc = 'https://3dymedios.com/AT/AppTiendasCatalogo/#/HomeCenter/ColeccionBurdeos'
+                        disableGitHub = {true}
+                    />
+
+                    <PinCard
+                        Titulo = "App Armado"
+                        IMGsrc ='./IMGS/Proyectos/Web/proArmado.png'
+                        Parrafo ="App-web de armado creado en mi tiempo en MaderKit. El codigo es privado por terminos de contrato."
+                        Websrc = 'https://3dymedios.com/AA/AppArmado/#/M01377'
+                        disableGitHub = {true}
+                    />
+
+                    <PinCard
                         Titulo = "Pinterest"
                         IMGsrc ='./IMGS/Proyectos/Web/proPinterest.png'
                         Parrafo ="Recreacion de Pinterest usando react.js"
@@ -27,15 +43,7 @@ export const WebFrontend = () => {
                         Gitsrc = 'https://github.com/JuanJoseEscobar/CursoReact/tree/main/04-git-expert-app'
                         Websrc = 'https://react-vite-fb.web.app/'
                     />
-
-                    <PinCard
-                        Titulo = "Catalogo Burdeos"
-                        IMGsrc ='./IMGS/Proyectos/Web/proCatalogo.png'
-                        Parrafo ="App web creado en mi tiempo en MaderKit. El codigo es privado por terminos de contrato."
-                        Websrc = 'https://3dymedios.com/AT/AppTiendasCatalogo/#/HomeCenter/ColeccionBurdeos'
-                        disableGitHub = {true}
-                    />
-
+                    
                     <PinCard
                         Titulo = "Pagina Personal"
                         IMGsrc ='./IMGS/Proyectos/Web/proPortafolio.png'
