@@ -16,7 +16,7 @@ export const Home = () => {
           <br />
           <h1 className="tituloColor">Juan Jose Escobar</h1>
           <h3 className="tituloColor3">Ingeniero Multimedia</h3>
-          <p className="espacio">¡Saludos! Me gradue de la universidad San Buenvaentura cali como ingeniero multimedia.</p>
+          <p className="espacio">Ingeniero multimedia graduado de la universidad San Buenaventura cali.</p>
         </div>
 
         <div className="precentacionContent">
